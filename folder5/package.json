@@ -1,0 +1,35 @@
+{
+  "name": "prisma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run tailwind\" \"npm run express\" \"npm run live\"",
+    "tailwind": "tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch",
+    "express": "nodemon server.js",
+    "live": "browser-sync start --config bs-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tsar365/prisma-blog-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Tsar365/prisma-blog-server/issues"
+  },
+  "homepage": "https://github.com/Tsar365/prisma-blog-server#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.24",
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.1",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
+  }
+}
