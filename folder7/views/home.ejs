@@ -1,0 +1,47 @@
+
+<%- include('partial/nav') %>
+  
+
+
+<body class="bg-gray-100 min-h-screen">
+
+  <header class="bg-red-500 text-white p-4 shadow-md">
+    <div class="container mx-auto">
+      <h1 class="text-2xl font-bold">Registered Homes</h1>
+    </div>
+  </header>
+
+  <main class="container mx-auto bg-white shadow-lg rounded-lg p-8 mt-10 max-w-xl">
+
+    <h2 class="text-4xl text-gray-800 font-bold text-center mb-6">
+      Here are our registered homes:
+    </h2>
+
+    <ul class="space-y-2 mb-8">
+  <% registerHomes.forEach(home => { %>
+    <li class="bg-gray-100 p-3 rounded shadow">
+      <p><strong>Name:</strong> <%= home.name %></p>
+      <p><strong>Email:</strong> <%= home.email %></p>
+      <p><strong>Phone:</strong> <%= home.phone %></p>
+      <p><strong>Address:</strong> <%= home.address %></p>
+    </li>
+  <% }) %>
+</ul>
+
+    <!-- Buttons -->
+    <div class="flex justify-center gap-4">
+      <a href="/form"
+         class="bg-green-500 text-white px-5 py-2 rounded hover:bg-green-600 transition">
+        Go to form
+      </a>
+
+      <a href="/"
+         class="bg-blue-500 text-white px-5 py-2 rounded hover:bg-blue-600 transition">
+        Back to Home
+      </a>
+    </div>
+
+  </main>
+
+</body>
+</html>

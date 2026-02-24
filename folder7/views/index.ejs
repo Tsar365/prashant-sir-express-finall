@@ -1,0 +1,68 @@
+<%- include('partial/nav') %>
+
+<body class="bg-gray-100 font-sans text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-red-600">Tailwind Express</h1>
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-4">Welcome to Express + Tailwind</h2>
+      <p class="text-lg mb-6">Build beautiful, responsive UIs quickly with Tailwind CSS</p>
+      <a href="#cards" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section id="cards" class="container mx-auto px-6 py-20">
+    <h3 class="text-3xl font-bold text-center mb-12">Our Features</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2">Responsive Design</h4>
+        <p class="text-gray-600">Your layout automatically adapts to any screen size, mobile, tablet, or desktop.</p>
+        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Learn More</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2">Easy Customization</h4>
+        <p class="text-gray-600">Tailwind’s utility classes let you tweak designs without touching CSS files.</p>
+        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Learn More</button>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow p-6 hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold mb-2">Fast Development</h4>
+        <p class="text-gray-600">Focus on building features instead of writing repetitive CSS.</p>
+        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-gray-200 py-16 text-center">
+    <h3 class="text-2xl font-bold mb-4">Ready to build something amazing?</h3>
+    <a href="/form" class="bg-blue-600 text-white px-8 py-3 rounded shadow hover:bg-blue-700 transition">Start Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow mt-12">
+    <div class="container mx-auto px-6 py-6 text-center text-gray-600">
+      &copy; 2026 Tailwind Express. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
